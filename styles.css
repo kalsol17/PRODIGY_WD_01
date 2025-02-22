@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Navigation Menu */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(178, 34, 34, 0.9); /* Dark red */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+#navbar ul li a:hover {
+  color: #ffd700; /* Gold */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transform: translateY(-3px);
+}
+
+/* Scrolled Navigation Menu */
+#navbar.scrolled {
+  background: rgba(139, 0, 0, 0.9); /* Darker red */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#navbar.scrolled ul li a {
+  color: white;
+}
+
+#navbar.scrolled ul li a:hover {
+  color: #ffd700; /* Gold */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Landing Page Sections */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#home {
+  background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+#menu {
+  background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+#about {
+  background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+#reservation {
+  background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+#contact {
+  background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  background: #ffd700; /* Gold */
+  color: #8b0000; /* Dark red */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #ffa500; /* Orange */
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar ul li {
+    margin: 10px 0;
+  }
+}/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Menu */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(178, 34, 34, 0.9); /* Dark red */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navbar ul li {
+    margin: 0 15px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #navbar ul li a:hover {
+    color: #ffd700; /* Gold */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transform: translateY(-3px);
+  }
+  
+  /* Scrolled Navigation Menu */
+  #navbar.scrolled {
+    background: rgba(139, 0, 0, 0.9); /* Darker red */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #navbar.scrolled ul li a {
+    color: white;
+  }
+  
+  #navbar.scrolled ul li a:hover {
+    color: #ffd700; /* Gold */
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Landing Page Sections */
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #home {
+    background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  }
+  
+  #menu {
+    background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  }
+  
+  #about {
+    background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  }
+  
+  #reservation {
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  }
+  
+  #contact {
+    background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    background: #ffd700; /* Gold */
+    color: #8b0000; /* Dark red */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #ffa500; /* Orange */
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navbar ul li {
+      margin: 10px 0;
+    }
+  }
+
+  
